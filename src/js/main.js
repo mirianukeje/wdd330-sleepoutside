@@ -1,6 +1,10 @@
 import ProductData from "./ProductData.mjs";
 import ProductList from "./ProductList.mjs";
 import Alert from "./alert.js";
+import { loadHeaderFooter } from "./utils.mjs";
+
+// Load the header and footer templates into the page
+loadHeaderFooter();
 
 // Create a new data source for tents
 
