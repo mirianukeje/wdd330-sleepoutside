@@ -115,6 +115,9 @@ button {
 }
 
 /* End utility classes */
+.hide {
+  display: none;
+}
 
 /* Cart icon styles */
 .cart {
