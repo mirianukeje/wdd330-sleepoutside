@@ -1,26 +1,8 @@
-import ProductData from "./ProductData.mjs";
-import ProductList from "./ProductList.mjs";
 import Alert from "./alert.js";
 import { loadHeaderFooter } from "./utils.mjs";
 
 // Load the header and footer templates into the page
 loadHeaderFooter();
-
-// Create a new data source for tents
-
-const dataSource = new ProductData("tents");
-
-// Get the product list element from the DOM
-
-const element = document.querySelector(".product-list");
-
-// Create a new ProductList instance
-
-const productList = new ProductList("Tents", dataSource, element);
-
-// Initialize the product list (fetch data and render)
-
-productList.init();
 
 // Create a new Alert instance and point it to the alerts.json file
 const alert = new Alert("./json/alerts.json");
